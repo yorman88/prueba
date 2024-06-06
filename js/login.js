@@ -64,13 +64,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
-// Se borran las variables del localstorage al cerrar la ventana del navegador
-window.addEventListener('beforeunload', function() {
-    
-    localStorage.removeItem('token');
-    localStorage.removeItem('logged_in');
-    localStorage.removeItem('sessionName');
-
-});
