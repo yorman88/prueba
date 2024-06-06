@@ -54,3 +54,12 @@ function mostrarDatos() {
         }
     });
 }
+
+// Se borran las variables del localstorage al cerrar la ventana del navegador
+window.addEventListener('unload', function() {
+    
+    localStorage.removeItem('token');
+    localStorage.removeItem('logged_in');
+    localStorage.removeItem('sessionName');
+
+});
